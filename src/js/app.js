@@ -1,10 +1,5 @@
-import Daemon from "./characters/types/daemon";
+import Validator from "./settingsGeneral/validator";
 
 console.log("worked");
-const daemon = new Daemon("Choo");
-daemon.getDamage = 2;
-console.log(daemon.damage);
-
-daemon.getStoned = true;
-daemon.getDamage = 2;
-console.log(daemon.damage);
+const user = new Validator("Oleg");
+console.log(user.validatorUsername());
